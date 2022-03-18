@@ -11,7 +11,7 @@ This kind of data transfer is common in dcc software. Baking map and transferrin
 2. Find the last item (the parent object) from the list and get the transform data of the item.
 3. Set attributes of the other items(the children objects) with the transform data got from the last item. 
 
-**How we can replicate the similar functions in Blender?**
+**How we can replicate the similar functions in Blender?**(You can refer to [selection_explanation.py](https://github.com/moonyuet/Match_Transformation_Toolkit/blob/main/Blender/selection_explanation.py))
 1. Get your selected objects and create a list
 2. Get the last item of the selected object and set the variable to indicate the last item. 
 3. Remove the last item of the selected object
