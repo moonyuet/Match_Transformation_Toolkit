@@ -16,5 +16,5 @@ This kind of data transfer is common in dcc software. Baking map and transferrin
 **How we can replicate the similar functions in Blender?**(You can refer to [selection_explanation.py](https://github.com/moonyuet/Match_Transformation_Toolkit/blob/main/Blender/selection_explanation.py))
 1. Get your selected objects and create a list
 2. Get the last item of the selected object and set the variable to indicate the last item. 
-3. Update the selection list by removing the last item of the selected object
-4. set the selected objects from the new selection list equal to the transform attirbute of the last item from the old selection list.
+3. Update the selection list by removing the last item of the selected objects.
+4. Set the selected objects from the new selection list equal to the transform attirbute of the last item from the old selection list.
