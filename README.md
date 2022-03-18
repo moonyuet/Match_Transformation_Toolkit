@@ -1,6 +1,8 @@
 **Match Transformation Toolkit in Blender** 
 
-As it is only used for educational purpose only, I don't include shell scripts or batch files in this repository. I also don't include the header for the match transformation toolkit in Blender too. If you want to autoload in Blender, please refer to some of my other blender scripts(https://github.com/moonyuet/blenderTextureInput/blob/main/textureInput/TexturewithPattern.py) as references to create bl_info for the script.
+As it is only used for educational purpose only, I don't include either shell scripts or batch files in this repository. I also don't include the header for the match transformation toolkit in Blender too. If you want to autoload in Blender, please refer to some of my other blender scripts(https://github.com/moonyuet/blenderTextureInput/blob/main/textureInput/TexturewithPattern.py) as references to create bl_info for the script.
+
+The final verion of the toolkit [here](https://github.com/moonyuet/Match_Transformation_Toolkit/blob/main/Blender/matchTransformation.py)
 
 **What is match transformation?**
 It is basically getting all transform data(translate, rotate and scale) from object A and transfer to become the new transform attribute of object B.
