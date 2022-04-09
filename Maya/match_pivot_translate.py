@@ -9,10 +9,12 @@ mesh_list = cmds.ls(selection=True, type="transform")
 
 idx = len(mesh_list)-1
 parent_obj = mesh_list[idx]
+#locate the pivot of the parent_obj
 pv = cmds.xform(parent_obj,piv=True ,q=True)
 
 for i in range(idx):
     if i < idx:
+        #get the translation of the children objects
         translate_p_attr_X = cmds.getAttr(mesh_list[i] + ".translateX")
         translate_p_attr_Y = cmds.getAttr(mesh_list[i] + ".translateY")
         translate_p_attr_Z = cmds.getAttr(mesh_list[i] + ".translateZ")
@@ -24,7 +26,9 @@ for i in range(idx):
         distance_X = translate_attr_X - translate_p_attr_X
         distance_Y = translate_attr_Y - translate_p_attr_Y
         distance_Z = translate_attr_Z - translate_p_attr_Z
-
+        
+#if the pivot is already centralized, use the translate attribute
+#else use the pivot attributes 
         if pv[0] == 0 and pv[1]== 0 and pv[2] == 0:
                   
             cmds.xform(mesh_list[i], pivots=[distance_X, distance_Y, distance_Z])
@@ -39,7 +43,6 @@ for i in range(idx):
     else:
         cmds.warning("You must select more than one object!")
             
-#if the pivot is already centralized, use the translate attribute
-#else use the pivot attributes 
+
         
         
